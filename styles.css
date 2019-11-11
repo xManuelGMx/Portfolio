@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.fondo{
+    filter: blur(1px);
+    position: fixed;
+    top: -130px;
+    left: 0;
+    z-index: -1;
+    width: 101%;
+}
+section{
+    padding: 20px 100px 10px 100px;
+    background-color: rgb(71, 109, 138);
+    font-size: 25px;
+}
+footer{
+    background-color: rgb(41, 41, 41);
+    padding: 12px 0 12px 0;
+}
+.subtitle{
+    font-family: 'Big Shoulders Text';
+    color: rgb(0, 255, 242);
+    font-size: 35px;
+}
+.title{
+    font-family: 'Lobster';
+}
+div{
+    font-family: 'Sunshiney';
+    color: rgb(0, 0, 0);
+}
+h1{
+    width: 11.1cm;
+    border: 2px dotted;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    margin: auto;
+    transform: scale(1.7,1.7);
+    box-shadow: 10px 10px 7px 3px rgba(0,0,0,0.8);
+}
+div.title{
+    color: rgb(0, 255, 242);
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.iconosNeon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@keyframes ocultar{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#github:hover{
+    animation-name: ocultar;
+    animation-duration: .8s;
+    opacity: 0;
+}
+#instagram:hover{
+    animation-name: ocultar;
+    animation-duration: .8s;
+    opacity: 0;
+}
+#gmail:hover{
+    animation-name: ocultar;
+    animation-duration: .8s;
+    opacity: 0;
+}
+#facebook:hover{
+    animation-name: ocultar;
+    animation-duration: .8s;
+    opacity: 0;
+}
+#twitter:hover{
+    animation-name: ocultar;
+    animation-duration: .8s;
+    opacity: 0;
+}
+hr{
+    background-color: rgb(0, 255, 242);
+    border-color: rgb(0, 255, 242);
+    border-radius: 50%;
+    height: 1mm;
+    margin: 30px 0 30px 0px;
+}
+li{
+    list-style-type: none;
+}
+li::before{
+    content: "►";
+    float: left;
+    width: 5mm;
+    font-size: 13px;
+    padding-top: 2mm;
+    color: rgb(0, 255, 242);
+}
+.cajas{
+    border-color: rgb(0, 255, 242);
+    border-style: dashed;
+    background-color: transparent;
+    border-width: .5mm;
+    font-family: 'Sunshiney';
+    font-size: 20px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+.botones input:hover,.botones button:hover{
+    animation: botones 1s;
+}
+@keyframes botones{
+    from{
+        color: black;
+        border-color: rgb(0, 255, 242);
+        transform: scale(1.2,1.2);
+    }
+    to{
+        color: rgb(0, 255, 242);
+        border-color: black;
+        transform: scale(1,1);
+    }
+}
