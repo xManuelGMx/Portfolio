@@ -1,55 +1,49 @@
-*{
-    box-sizing: border-box;
-}
-.contenedor{
-    position: absolute;
-    top: 0;
-    left: 0;
+body{
     margin: 0;
     background-color: black;
-    color: rgb(255, 255, 255);
 }
-header{
-    height: 90vh;
-    background-image: url("Fondos/fondo2.jpg");
-    background-position-y: -5em;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.fondo{
+    filter: blur(1px);
+    position: fixed;
+    top: -130px;
+    left: 0;
+    z-index: -1;
+    width: 101%;
 }
 section{
-    padding: 1.2em 4em 1.2em 4em;
+    padding: 20px 100px 10px 100px;
     background-color: rgb(71, 109, 138);
-    font-size: 1.5em;
+    font-size: 25px;
 }
 footer{
     background-color: rgb(41, 41, 41);
-    padding: 1em 0 1em 0;
+    padding: 12px 0 12px 0;
 }
 .subtitle{
     font-family: 'Big Shoulders Text';
     color: rgb(0, 255, 242);
-    font-size: 1.3em;
+    font-size: 35px;
 }
 .title{
     font-family: 'Lobster';
 }
 div{
     font-family: 'Sunshiney';
-    color: rgb(255, 255, 255);
+    color: white;
 }
 h1{
-    width: 14em;
+    width: 11.1cm;
     border: 2px dotted;
-    padding: .3em;
-    border-radius: .6em;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
     margin: auto;
     transform: scale(1.7,1.7);
     box-shadow: 10px 10px 7px 3px rgba(0,0,0,0.8);
 }
 div.title{
     color: rgb(0, 255, 242);
-    padding-top: 40vh;
+    padding-top: 250px;
+    padding-bottom: 250px;
 }
 .iconosNeon{
     display: flex;
@@ -101,7 +95,7 @@ hr{
     border-color: rgb(0, 255, 242);
     border-radius: 50%;
     height: 1mm;
-    margin: 1.3em 0 1.3em 0;
+    margin: 30px 0 30px 0px;
 }
 li{
     list-style-type: none;
@@ -109,9 +103,9 @@ li{
 li::before{
     content: "►";
     float: left;
-    width: 1.5em;
-    font-size: .6em;
-    padding-top: .5em;
+    width: 5mm;
+    font-size: 13px;
+    padding-top: 2mm;
     color: rgb(0, 255, 242);
 }
 .cajas{
@@ -120,7 +114,7 @@ li::before{
     background-color: transparent;
     border-width: .5mm;
     font-family: 'Sunshiney';
-    font-size: .9em;
+    font-size: 20px;
 }
 .botones{
     display: flex;
@@ -131,36 +125,13 @@ li::before{
 }
 @keyframes botones{
     from{
-        color: rgb(255, 255, 255);
+        color: white;
         border-color: rgb(0, 255, 242);
         transform: scale(1.2,1.2);
     }
     to{
         color: rgb(0, 255, 242);
-        border-color: rgb(255, 255, 255);
+        border-color: white;
         transform: scale(1,1);
     }
-}
-@media screen and (max-width:400px){
-    .contenedor{
-        margin: 0;
-        width: 100%;
-    }
-    .fondo{
-        top: 0;
-        width: 100vw;
-    }
-    h1{
-        transform: scale(.6,.6);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    header{
-        height: 40vh;
-    }
-    div.title{
-        margin: auto;
-        padding-top: 15vh;
-    }
-}
+} 
