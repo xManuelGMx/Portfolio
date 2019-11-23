@@ -11,76 +11,102 @@
 </head>
 <body>
     <header>
-        <img class="fondo" src="Fondos/fondo2.jpg" alt="Fondo">
-        <div class="title">
-            <h1>Manuel Santiago Gómez Mancipe</h1>
-        </div>
+        <h1 class="title">Manuel Santiago Gómez Mancipe</h1>
+        <img class="fondo" src="Fondos/fondo2.jpg" alt="Fondo" width="100%" height="101%">
     </header>
-    <section>
-        <div>
-            Soy un estudiante de bachillerato de grado Once, de la Escuela Tecnológica Instituto Técnico Central de La Salle que hace parte de la <em>Especialidad de Sistemas</em>, ahora soy un estudiante de Acámica que pertenece al programa de <b>Desarrollo Web Full Stack</b> que tiene como objetivo aprender más sobre desarrollo web, Back-end y Front-end.
-        </div>
-        <hr>
-        <div>
-            A lo largo de mi vida como programador he aprendido diferentes tecnologías y lenguajes de programación:<br>
-            <span class="iconos">
-                <ul>
-                    <span class="subtitle">Lenguajes:</span>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>PHP</li>
-                    <li>Programación de bloques</li>
-                    <li>Diagramas de flujo</li>
-                    <li>Bases de datos</li>
-                </ul>
-                <ul>
-                    <span class="subtitle">Programas:</span>
-                    <li>Dev-C++</li>
-                    <li>NetBeans</li>
-                    <li>DFD</li>
-                    <li>Atom</li>
-                    <li>Sublime Text</li>
-                    <li>Visual Studio Code</li>
-                    <li>MySQL</li>
-                    <li>Scratch</li>
-                    <li>Processing</li>
-                    <li>Arduino</li>
-                    <li>Robotino® View</li>
-                </ul>
-            </span>
-        </div>
-        <hr>
-        <div>
-            <span class="subtitle">Proyectos:</span>
-            <ul class="iconos">
-                <li>Picas y fijas: C++ y HTML/PHP</li>
-                <li>Snake: Processing</li>
-                <li>Joystick skin: Robotino® View</li>
+    <section class="midth">
+        <nav class="menu">
+            <span class="subtitle">Menú</span>
+            <ul>
+                <li>
+                    <a href="#quien">¿Quién soy?</a>
+                </li>
+                <li>
+                    <a href="#conocimientos">Conocimientos</a>
+                </li>
+                <li>
+                    <a href="#lenguajes">Lenguajes de programación</a>
+                </li>
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#programas">Programas empleados</a>
+                </li>
+                <li>
+                    <a href="#contacto">Formulario de contacto</a>
+                </li>
             </ul>
-        </div>
-        <hr>
-        <div>
-            <span class="subtitle">Formulario de contacto:</span>
-            <form class="iconos" id="contacto">
-                <span>
-                    <label for="nombre">Nombre: </label><br>
-                    <input class="cajas" type="text" name="nombre" id="nombre">
-                </span>
-                <span>
-                    <label for="correo">Correo: </label><br>
-                    <input class="cajas" type="email" name="correo" id="correo">             
-                </span>
-                <span>
-                    <label for="mensaje">Mensaje: </label><br>
-                    <textarea style="resize: none;" class="cajas" name="mensaje" id="mensaje" cols="40" rows="4"></textarea>
-                </span>
-                <span class="botones">
-                    <input class="cajas" type="button" name="enviar" value="Enviar"><br>
-                    <button class="cajas" onclick="reset()">Reset</button>
-                </span>
-            </form>
-        </div>
+        </nav>
+        <article>
+            <section id="quien">
+                Soy un estudiante de bachillerato de grado Once, de la Escuela Tecnológica Instituto Técnico Central de La Salle que hace parte de la <em>Especialidad de Sistemas</em>, ahora soy un estudiante de Acámica que pertenece al programa de <b>Desarrollo Web Full Stack</b> que tiene como objetivo aprender más sobre desarrollo web, Back-end y Front-end.
+            </section>
+            <hr>
+            <section id="conocimientos">
+                A lo largo de mi vida como programador he aprendido diferentes tecnologías y lenguajes de programación:
+                <div class="lista">
+                    <ul>
+                        <span class="subtitle" id="lenguajes">Lenguajes:</span>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>PHP</li>
+                        <li>Programación de bloques</li>
+                        <li>Diagramas de flujo</li>
+                        <li>Bases de datos</li>
+                    </ul>
+                    <ul>
+                        <span class="subtitle" id="programas">Programas:</span>
+                        <li>Dev-C++</li>
+                        <li>NetBeans</li>
+                        <li>DFD</li>
+                        <li>Atom</li>
+                        <li>Sublime Text</li>
+                        <li>Visual Studio Code</li>
+                        <li>MySQL</li>
+                        <li>Scratch</li>
+                        <li>Processing</li>
+                        <li>Arduino</li>
+                        <li>Robotino® View</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <span class="subtitle" id="proyectos">Proyectos:</span>
+                <ul class="lista">
+                    <li>Picas y fijas: C++ y HTML/PHP</li>
+                    <li>Snake: Processing</li>
+                    <li>Joystick skin: Robotino® View</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <span class="subtitle" id="contacto">Formulario de contacto:</span>
+                <form id="contacto">
+                    <span>
+                        <label for="nombre">Nombre: </label><br>
+                        <input class="cajas" type="text" name="nombre" id="nombre">
+                    </span>
+                    <span>
+                        <label for="correo">Correo: </label><br>
+                        <input class="cajas" type="email" name="correo" id="correo">             
+                    </span>
+                    <span>
+                        <label for="mensaje">Mensaje: </label><br>
+                        <textarea style="resize: none;" class="cajas" name="mensaje" id="mensaje" cols="35" rows="4"></textarea>
+                    </span>
+                    <div class="botones">
+                        <input class="cajas" type="button" name="enviar" value="Enviar"><br>
+                        <button class="cajas" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+        <aside class="subtitle">
+            Información
+        </aside>
     </section>
     <footer>
         <span class="iconosNeon">
